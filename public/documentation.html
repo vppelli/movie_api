@@ -36,7 +36,9 @@
                     <td>/movies</td>
                     <td>GET</td>
                     <td>None</td>
-                    <td>A JSON object holding data about all the movies
+                    <td>A JSON array holding data about all the movies<br>
+                        Returns an array of movies<br>
+                        [] Movies
                     </td>
                 </tr>
                 <tr>
@@ -44,7 +46,9 @@
                     <td>/movies/:movieName</td>
                     <td>GET</td>
                     <td>None</td>
-                    <td>A JSON object holding data about the movie
+                    <td>A JSON object holding data about the movie<br>
+                        Returns an object about the movie<br>
+                        {<br>title: string, <br>genre: {}string, <br>genreAssist: {}string, <br>discription: {}string, <br>director: {}string and intiger, <br>coverArt: string<br>}
                     </td>
                 </tr>
                 <tr>
@@ -52,7 +56,9 @@
                     <td>/movies/genre/:genreName</td>
                     <td>GET</td>
                     <td>None</td>
-                    <td>A JSON object holding data about chosen Genre
+                    <td>A JSON object holding data about chosen Genre<br>
+                        Returns a object about Genre<br>
+                        {<br>name: string, <br>info: string<br>}
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +66,9 @@
                     <td>/movies/director/:directorName</td>
                     <td>GET</td>
                     <td>None</td>
-                    <td>A JSON object holding data about chosen directors name
+                    <td>A JSON object holding data about chosen directors name<br>
+                        Returns a object about the director<br>
+                        {<br>name: string, <br>birth: intiger, <br>about: string<br>}
                     </td>
                 </tr>
                 <tr>
@@ -80,7 +88,10 @@
                     <td>GET</td>
                     <td>NONE
                     </td>
-                    <td>A JSON object holding data about all user</td>
+                    <td>A JSON array holding data about all user<br>
+                        Returns an array of Users<br>
+                        [] Users
+                    </td>
                 </tr>
                 <tr>
                     <td>Get users by id</td>
@@ -88,7 +99,10 @@
                     <td>GET</td>
                     <td>NONE
                     </td>
-                    <td>A JSON object holding data about user</td>
+                    <td>A JSON object holding data about user<br>
+                        Returns an object about the user<br>
+                        {<br>name: string,<br>favoriteMovies: []Movie,<br>id: integer<br>}
+                    </td>
                 </tr>
                 <tr>
                     <td>Allow users to update their user info</td>
