@@ -62,12 +62,12 @@ let topMovies = [
             info: 'Action film is a film genre in which the protagonist is thrust into a series of events that typically involve violence and physical feats.'
         },
         discription: {
-            released: 1998,
+            released: 'July 24, 1998',
             about: 'Captain John Miller (Tom Hanks) takes his men behind enemy lines to find Private James Ryan, whose three brothers have been killed in combat. Surrounded by the brutal realties of war, while searching for Ryan, each man embarks upon a personal journey and discovers their own strength to triumph over an uncertain future with honor, decency and courage.'
         },
         director: {
             name: 'Steven Spielberg',
-            birth: 'December 18, 1946',
+            birth: 1946,
             about: 'Steven Allan Spielberg is an American film director, producer and screenwriter. A major figure of the New Hollywood era and pioneer of the modern blockbuster, he is the most commercially successful director in history.'
         },
         coverArt: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQ89HMuHlCxJwu68S3e0JQLtY3o_uc2woCAF8Vbq3Y3JzWJMto'
@@ -220,7 +220,7 @@ let topMovies = [
         coverArt: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnTcyXlF38VmQJozasV7WqliCvMbU3r-A8p5hJoJzttfkqD1KI'
     },
     {
-        title: 'The Avengers#',
+        title: 'The Avengers',
         genre: {
             name: 'Adventure',
             info: 'Adventure fiction is a type of fiction that usually presents danger, or gives the reader a sense of excitement.'
