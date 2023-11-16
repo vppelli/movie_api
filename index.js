@@ -147,7 +147,7 @@ let topMovies = [
         },
         discription: {
             released: 'June 16, 2006',
-            about: 'Sean Boswell (Lucas Black) always feels like an outsider, but he defines himself through his victories as a street racer. His hobby makes him unpopular with the authorities, so he goes to live with his father in Japan. Once there and even more alienated, he learns about an exciting, but dangerous, new style of the sport. The stakes are high when Sean takes on the local champion and falls for the man\'s girlfriend.#'
+            about: 'Sean Boswell (Lucas Black) always feels like an outsider, but he defines himself through his victories as a street racer. His hobby makes him unpopular with the authorities, so he goes to live with his father in Japan. Once there and even more alienated, he learns about an exciting, but dangerous, new style of the sport. The stakes are high when Sean takes on the local champion and falls for the man\'s girlfriend.'
         },
         director: {
             name: 'Justin Lin',
@@ -188,7 +188,7 @@ let topMovies = [
             info: 'Adventure fiction is a type of fiction that usually presents danger, or gives the reader a sense of excitement.'
         },
         discription: {
-            released: 'February 12, 2016#',
+            released: 'February 12, 2016',
             about: 'Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool uses his new skills to hunt down the man who nearly destroyed his life.'
         },
         director: {

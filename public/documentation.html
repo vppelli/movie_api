@@ -48,7 +48,7 @@
                     <td>None</td>
                     <td>A JSON object holding data about the movie<br>
                         Returns an object about the movie<br>
-                        {<br>title: string, <br>genre: {}string, <br>genreAssist: {}string, <br>discription: {}string, <br>director: {}string and intiger, <br>coverArt: string<br>}
+                        {<br>Title: string, <br>Description: string, <br>Released: string, <br>Genre: []string, <br>Director: []string, <br>ImagePath: string<br>Featured: boolean<br>}
                     </td>
                 </tr>
                 <tr>
@@ -58,7 +58,7 @@
                     <td>None</td>
                     <td>A JSON object holding data about chosen Genre<br>
                         Returns a object about Genre<br>
-                        {<br>name: string, <br>info: string<br>}
+                        {<br>Name: string, <br>About: string<br>}
                     </td>
                 </tr>
                 <tr>
@@ -68,7 +68,7 @@
                     <td>None</td>
                     <td>A JSON object holding data about chosen directors name<br>
                         Returns a object about the director<br>
-                        {<br>name: string, <br>birth: intiger, <br>about: string<br>}
+                        {<br>Name: string,<br>Bio: string,<br>Born: intiger,<br>Dead: string<br>}
                     </td>
                 </tr>
                 <tr>
@@ -76,7 +76,7 @@
                     <td>/users</td>
                     <td>POST</td>
                     <td>A JSON object holding data about the user to add.<br>Structured like:<br>
-                        {<br>"name": "Billy",<br>"favoriteMovies": []<br>}
+                        {<br>"Username": "Billy",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"favoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
                     </td>
                     <td>A text message indicating whether the user was successfully created or not<br>
                         Message: "Billy" has been created with ID:"#"
@@ -101,7 +101,7 @@
                     </td>
                     <td>A JSON object holding data about user<br>
                         Returns an object about the user<br>
-                        {<br>name: string,<br>favoriteMovies: []Movie,<br>id: integer<br>}
+                        {<br>"Username": "Billy",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"favoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
                     </td>
                 </tr>
                 <tr>
@@ -109,10 +109,10 @@
                     <td>/users/:id</td>
                     <td>PUT</td>
                     <td>A JSON object holding data about the user update.<br>Structured like:<br>
-                        {<br>"name": "Billy G"<br>}
+                        {<br>"Username": "Billy G",<br>}
                     </td>
                     <td>A JSON object holding data about updated user:<br>
-                        {<br>"name": "Billy G",<br>"favoriteMovies": []<br>"id": "#"<br>}
+                        {<br>"Username": "Billy G",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"favoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
                     </td>
                 </tr>
                 <tr>
