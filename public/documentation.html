@@ -43,7 +43,7 @@
                 </tr>
                 <tr>
                     <td>Get info by Movie<br>Description, Genre, Director, Cover-art</td>
-                    <td>/movies/:movieName</td>
+                    <td>/movies/:Title</td>
                     <td>GET</td>
                     <td>None</td>
                     <td>A JSON object holding data about the movie<br>
@@ -52,8 +52,18 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Get a list of Genres</td>
+                    <td>/genres</td>
+                    <td>GET</td>
+                    <td>None</td>
+                    <td>A JSON array holding data about all Genre<br>
+                        Returns a array of Genre<br>
+                        [] Genres
+                    </td>
+                </tr>
+                <tr>
                     <td>Get Genre by Name<br>Horror, Action, Sci-fi</td>
-                    <td>/movies/genre/:genreName</td>
+                    <td>/genres/:Name</td>
                     <td>GET</td>
                     <td>None</td>
                     <td>A JSON object holding data about chosen Genre<br>
@@ -62,8 +72,18 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Get a list of Directors</td>
+                    <td>/directors</td>
+                    <td>GET</td>
+                    <td>None</td>
+                    <td>A JSON array holding data about all Directors<br>
+                        Returns a array of Directors<br>
+                        [] Directors
+                    </td>
+                </tr>
+                <tr>
                     <td>Get Director by Name<br>example: Ridley Scott</td>
-                    <td>/movies/director/:directorName</td>
+                    <td>/directors/:Name</td>
                     <td>GET</td>
                     <td>None</td>
                     <td>A JSON object holding data about chosen directors name<br>
@@ -76,7 +96,7 @@
                     <td>/users</td>
                     <td>POST</td>
                     <td>A JSON object holding data about the user to add.<br>Structured like:<br>
-                        {<br>"Username": "Billy",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"favoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
+                        {<br>"Username": "Billy",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"FavoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
                     </td>
                     <td>A text message indicating whether the user was successfully created or not<br>
                         Message: "Billy" has been created with ID:"#"
@@ -94,30 +114,30 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Get users by id</td>
-                    <td>/users/:id</td>
+                    <td>Get user by username</td>
+                    <td>/users/:Username</td>
                     <td>GET</td>
                     <td>NONE
                     </td>
                     <td>A JSON object holding data about user<br>
                         Returns an object about the user<br>
-                        {<br>"Username": "Billy",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"favoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
+                        {<br>"Username": "Billy",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"FavoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
                     </td>
                 </tr>
                 <tr>
                     <td>Allow users to update their user info</td>
-                    <td>/users/:id</td>
+                    <td>/users/:Username</td>
                     <td>PUT</td>
                     <td>A JSON object holding data about the user update.<br>Structured like:<br>
                         {<br>"Username": "Billy G",<br>}
                     </td>
                     <td>A JSON object holding data about updated user:<br>
-                        {<br>"Username": "Billy G",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"favoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
+                        {<br>"Username": "Billy G",<br>"Password": "secure123",<br>"Email": "billy.g@email.com",<br>"FavoriteMovies": [],<br>"Birthday": "YYYY-MM-DD"<br>}
                     </td>
                 </tr>
                 <tr>
                     <td>Allow users to add a movie to their<br>list of favorites</td>
-                    <td>/users/:id/:movieTitle</td>
+                    <td>/users/:Username/movies/:MovieID</td>
                     <td>POST</td>
                     <td>NONE</td>
                     <td>A text message indicating whether the favorite movie was added or not<br>
@@ -126,7 +146,7 @@
                 </tr>
                 <tr>
                     <td>Allow users to Remove a movie from their<br>list of favorites</td>
-                    <td>/users/:id/:movieTitle</td>
+                    <td>/users/:Username/movies/:MovieID</td>
                     <td>DELETE</td>
                     <td>NONE</td>
                     <td>A text message indicating whether the favorite movie was removed or not<br>
@@ -135,7 +155,7 @@
                 </tr>
                 <tr>
                     <td>Allow existing users to deregister</td>
-                    <td>/users/:id</td>
+                    <td>/users/:Username</td>
                     <td>DELETE</td>
                     <td>NONE</td>
                     <td>A text message indicating whether the user was removed or not<br>
