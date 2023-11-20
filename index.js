@@ -195,7 +195,7 @@ app.put('/users/:Username', async (req, res) => {
 // DELETE -----------------------------------------------------------------------
 // Deletes users from DB, returns a Message
 app.delete('/users/:Username', async (req, res) => {
-    await Users.findOneAndRemove({ Username: req.params.Username })
+    await Users.findOneAndDelete({ Username: req.params.Username })
         .then((user) => {
             if (!user) {
                 res.status(400).send(req.params.Username + ' was not found');
