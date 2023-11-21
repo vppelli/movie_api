@@ -4,9 +4,9 @@ The web application will provide users with access to information about differen
 ## Live version of the API
 link: [Movie-Mikes List of Movies](https://movie-mikes-7b54f5710543.herokuapp.com/movies)
 
-### Movie List
-List of my favorite movies will appear
-( 11 movies total )
+### The Mikes movie list
+  Shows a list of my favorite movies.
+  ( 11 movies total )
 
 ## Documentation
 - Visit the API's [documentation](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html) for all endpoints avalible
@@ -23,18 +23,16 @@ List of my favorite movies will appear
 - Postman (for testing)
 
 ## Dependencies
-bcrypt
-body-parser
-cors
-express
-express-validator
-jsonwebtoken
-mongoose
-morgan
-passport (with passport-jwt, and passport-local)
-uuid
+- bcrypt
+- cors
+- express
+- express-validator
+- jsonwebtoken
+- mongoose
+- morgan
+- passport (with passport-jwt, and passport-local)
 
-nodemon (dev)
+- nodemon (dev)
 
 ## Cloud Platform / Cloud Database Used
 - Heroku Link: [https://www.heroku.com/](https://www.heroku.com/)
