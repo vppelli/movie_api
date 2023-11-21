@@ -1,7 +1,7 @@
 # Movie Mike API
 The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
 
-## Live version of the API
+## Live version
 link: [Movie-Mikes List of Movies](https://movie-mikes-7b54f5710543.herokuapp.com/movies)
 
 ### The Mikes movie list
@@ -9,7 +9,7 @@ link: [Movie-Mikes List of Movies](https://movie-mikes-7b54f5710543.herokuapp.co
   ( 11 movies total )
 
 ## Documentation
-- Visit the API's [documentation](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html) for all endpoints avalible
+- Visit the API's [documentation](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html) for all endpoints available
 - Or Check the [documentation](.public/documentation.html) inside the public folder
 
 - You can also download the files manually, and open the documentation.html to preview it on webbrowser
