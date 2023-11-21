@@ -45,7 +45,7 @@
                     <td>Get a list of movies</td>
                     <td>/movies</td>
                     <td>GET</td>
-                    <td>Authorize your token</td>
+                    <td>NONE</td>
                     <td>A JSON array holding data about all the movies<br>
                         Returns an array of movies<br>
                         [] Movies
@@ -55,7 +55,7 @@
                     <td>Get info by Movie<br>Description, Genre, Director, Cover-art</td>
                     <td>/movies/:Title</td>
                     <td>GET</td>
-                    <td>Authorize your token</td>
+                    <td>NONE</td>
                     <td>A JSON object holding data about the movie<br>
                         Returns an object about the movie<br>
                         {<br>Title: string, <br>Description: string, <br>Released: string, <br>Genre: []string, <br>Director: []string, <br>ImagePath: string<br>Featured: boolean<br>}
@@ -65,7 +65,7 @@
                     <td>Get a list of Genres</td>
                     <td>/genres</td>
                     <td>GET</td>
-                    <td>Authorize your token</td>
+                    <td>NONE</td>
                     <td>A JSON array holding data about all Genre<br>
                         Returns a array of Genre<br>
                         [] Genres
@@ -75,7 +75,7 @@
                     <td>Get Genre by Name<br>Horror, Action, Sci-fi</td>
                     <td>/genres/:Name</td>
                     <td>GET</td>
-                    <td>Authorize your token</td>
+                    <td>NONE</td>
                     <td>A JSON object holding data about chosen Genre<br>
                         Returns a object about Genre<br>
                         {<br>Name: string, <br>About: string<br>}
@@ -85,7 +85,7 @@
                     <td>Get a list of Directors</td>
                     <td>/directors</td>
                     <td>GET</td>
-                    <td>Authorize your token</td>
+                    <td>NONE</td>
                     <td>A JSON array holding data about all Directors<br>
                         Returns a array of Directors<br>
                         [] Directors
@@ -95,7 +95,7 @@
                     <td>Get Director by Name<br>example: Ridley Scott</td>
                     <td>/directors/:Name</td>
                     <td>GET</td>
-                    <td>Authorize your token</td>
+                    <td>NONE</td>
                     <td>A JSON object holding data about chosen directors name<br>
                         Returns a object about the director<br>
                         {<br>Name: string,<br>Bio: string,<br>Born: intiger,<br>Dead: string<br>}
@@ -110,17 +110,6 @@
                     </td>
                     <td>A text message indicating whether the user was successfully created or not<br>
                         Message: "Billy" was added
-                    </td>
-                </tr>
-                <tr>
-                    <td>Get list of all users</td>
-                    <td>/users</td>
-                    <td>GET</td>
-                    <td>Authorize your token
-                    </td>
-                    <td>A JSON array holding data about all user<br>
-                        Returns an array of Users<br>
-                        [] Users
                     </td>
                 </tr>
                 <tr>
