@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
 });
 
 // Gets the endpoint '/movies' and returns a list of movies in JSON
-app.get('/movies', async (req, res) => {
+app.get('/movies', passport.authenticate('jwt', { session: false }), async (req, res) => {
     await Movies.find()
         .then((movies) => {
             res.status(200).json(movies);
@@ -56,7 +56,7 @@ app.get('/movies', async (req, res) => {
 });
 
 // Gets requested movie, returns it in JSON
-app.get('/movies/:Title', async (req, res) => {
+app.get('/movies/:Title', passport.authenticate('jwt', { session: false }), async (req, res) => {
     await Movies.findOne({ Title: req.params.Title })
         .then((movie) => {
             res.status(200).json(movie);
@@ -67,7 +67,7 @@ app.get('/movies/:Title', async (req, res) => {
 });
 
 // Gets the endpoint '/genres' and returns a list of genres in JSON
-app.get('/genres', async (req, res) => {
+app.get('/genres', passport.authenticate('jwt', { session: false }), async (req, res) => {
     await Genres.find()
         .then((genres) => {
             res.status(200).json(genres);
@@ -78,7 +78,7 @@ app.get('/genres', async (req, res) => {
 });
 
 // Gets requested genre, returns it in JSON
-app.get('/genres/:Name', async (req, res) => {
+app.get('/genres/:Name', passport.authenticate('jwt', { session: false }), async (req, res) => {
     await Genres.findOne({ Name: req.params.Name })
         .then((genre) => {
             res.status(200).json(genre);
@@ -89,7 +89,7 @@ app.get('/genres/:Name', async (req, res) => {
 });
 
 // Gets the endpoint '/genres' and returns a list of genres in JSON
-app.get('/directors', async (req, res) => {
+app.get('/directors', passport.authenticate('jwt', { session: false }), async (req, res) => {
     await Directors.find()
         .then((directors) => {
             res.status(200).json(directors);
@@ -100,7 +100,7 @@ app.get('/directors', async (req, res) => {
 });
 
 // Gets requested genre, returns it in JSON
-app.get('/directors/:Name', async (req, res) => {
+app.get('/directors/:Name', passport.authenticate('jwt', { session: false }), async (req, res) => {
     await Directors.findOne({ Name: req.params.Name })
         .then((director) => {
             res.status(200).json(director);
