@@ -125,7 +125,7 @@ app.get('/users/:Username', passport.authenticate('jwt', { session: false }), as
 // CREATE -----------------------------------------------------------------------
 // Create a new user and returns it in JSON
 app.post('/users', [
-    check('Username', 'Username is required').isLength({min: 5}),
+    check('Username', 'Username is required').isLength({min: 4}),
     check('Username', 'Username contains non alphanumeric characters - not allowed.').isAlphanumeric(),
     check('Password', 'Password is required').not().isEmpty(),
     check('Email', 'Email does not appear to be valid').isEmail()
@@ -188,11 +188,10 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
 // UPDATE -----------------------------------------------------------------------
 // Updates a users info and returns a Message + JSON
 app.put('/users/:Username', passport.authenticate('jwt', { session: false }), [
-    check('Username', 'Username is required').isLength({min: 5}),
+    check('Username', 'Username is required').isLength({min: 4}),
     check('Username', 'Username contains non alphanumeric characters - not allowed.').isAlphanumeric(),
     check('Password', 'Password is required').not().isEmpty(),
-    check('Email', 'Email does not appear to be valid').isEmail(),
-    check('Birthday', 'Data does not appear to be valid').isDate()
+    check('Email', 'Email does not appear to be valid').isEmail()
   ], async (req, res) => {
     // CONDITION TO CHECK User is the User
     if(req.user.Username !== req.params.Username){
