@@ -4,6 +4,7 @@ const express = require('express'),
     path = require('path'),
     mongoose = require('mongoose'),
     Models = require('./models.js'),
+    cors = require('cors'),
     Movies = Models.Movie,
     Users = Models.User,
     Genres = Models.Genre,
@@ -24,8 +25,6 @@ app.use(morgan('combined', { stream: accessLogStream }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-const cors = require('cors');
 
 let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://localhost:1234'];
 //allow specific set of origins to access your API
