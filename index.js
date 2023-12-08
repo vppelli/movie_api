@@ -26,19 +26,8 @@ app.use(morgan('combined', { stream: accessLogStream }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://localhost:1234'];
 //allow specific set of origins to access your API
-app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin) return callback(null, true);
-        if (allowedOrigins.indexOf(origin) === -1) {
-            // If a specific origin isn’t found on the list of allowed origins
-            let message = 'The CORS policy for this application doesn\'t allow access from origin ' + origin;
-            return callback(new Error(message), false);
-        }
-        return callback(null, true);
-    }
-}));
+app.use(cors());
 
 let auth = require('./auth')(app);
 
