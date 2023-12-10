@@ -35,9 +35,6 @@ const passport = require('passport');
 
 require('./passport');
 
-// saves login on app after refreshing page
-app.use(session({ secret: 'keyboard cat', resave: false }))
-
 // Setup static serve
 app.use(express.static('public'));
 
