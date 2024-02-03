@@ -1,4 +1,4 @@
-[![Movie Client](https://github.com/vppelli/Vppelli/blob/main/img/MOVEAPI.png)](https://movie-mikes-7b54f5710543.herokuapp.com/movies)
+[![Movie Client](https://github.com/vppelli/Vppelli/blob/main/img/MOVEAPI.png)](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html)
 
 [![Movie Client][Client-shield]][Client-url]
 
@@ -10,7 +10,7 @@ To build the server-side component of a “movies” web application. The web ap
 
 
 
-# [Movie-Mikes List of Movies](https://movie-mikes-7b54f5710543.herokuapp.com/movies) Live Demo
+# Movie API [Link](https://movie-mikes-7b54f5710543.herokuapp.com) Live
 
 Mikes Movie list
 > Shows a list of my favorite movies. ( 11 movies total )
