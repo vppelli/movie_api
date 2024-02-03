@@ -18,6 +18,7 @@ Mikes Movie list
 ## Documentation
 - Visit the API's [documentation](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html) for all endpoints available
 - Or Check the [documentation](./public/documentation.html) inside the public folder
+- Postman Online [Documentation](https://documenter.getpostman.com/view/31090300/2s9YyvCLfc)
 
 - You can also download the files manually, and open the documentation.html to preview it on webbrowser
 
