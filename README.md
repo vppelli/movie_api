@@ -1,16 +1,19 @@
-# Movie Mike API
+[![Movie Client](https://github.com/vppelli/Vppelli/blob/main/img/MOVEAPI.png)](https://movie-mikes-7b54f5710543.herokuapp.com/movies)
 
 [![Movie Client][Client-shield]][Client-url]
 
-## Description
+# Description
 The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
 
-## Live version
-link: [Movie-Mikes List of Movies](https://movie-mikes-7b54f5710543.herokuapp.com/movies)
+## Objective
+To build the server-side component of a “movies” web application. The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
 
-### The Mikes movie list
-  Shows a list of my favorite movies.
-  ( 11 movies total )
+
+
+# [Movie-Mikes List of Movies](https://movie-mikes-7b54f5710543.herokuapp.com/movies) Live Demo
+
+Mikes Movie list
+> Shows a list of my favorite movies. ( 11 movies total )
 
 ## Documentation
 - Visit the API's [documentation](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html) for all endpoints available
