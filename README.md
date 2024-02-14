@@ -1,4 +1,5 @@
-[![Movie Client](https://github.com/vppelli/Vppelli/blob/main/img/MOVEAPI.png)](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html)
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/vppelli/Vppelli/blob/main/img/MOVEAPI.png"><source media="(prefers-color-scheme: light)" srcset="https://github.com/vppelli/Vppelli/blob/main/img/LMOVEAPI.png"><img alt="Movie API link" src="https://github.com/vppelli/Vppelli/blob/main/img/MOVEAPI.png">
+</picture>](https://github.com/vppelli/movie_api)
 
 [![Movie Client][Client-shield]][Client-url]
 
@@ -20,7 +21,7 @@ Mikes Movie list
 - Or Check the [documentation](./public/documentation.html) inside the public folder
 - Postman Online [Documentation](https://documenter.getpostman.com/view/31090300/2s9YyvCLfc)
 
-- You can also download the files manually, and open the documentation.html to preview it on webbrowser
+- You can also download the files manually, and open the documentation.html to preview it on the web browser
 
 ## Used
 - HTML
