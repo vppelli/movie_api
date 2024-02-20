@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //allow specific set of origins to access your API
-let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://localhost:1234', 'https://moviemikes.netlify.app'];
+let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://localhost:1234', 'https://moviemikes.netlify.app', 'http://localhost:4200'];
 
 app.use(cors({
   origin: (origin, callback) => {
