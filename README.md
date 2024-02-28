@@ -20,6 +20,7 @@ Mikes Movie list
 - Visit the API's [documentation](https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html) for all endpoints available
 - Or Check the [documentation](./public/documentation.html) inside the public folder
 - Postman Online [Documentation](https://documenter.getpostman.com/view/31090300/2s9YyvCLfc)
+- JSDoc Online [Documentation](https://movie-mikes-7b54f5710543.herokuapp.com/index.html)
 
 - You can also download the files manually, and open the documentation.html to preview it on the web browser
 
@@ -42,6 +43,7 @@ Mikes Movie list
 - passport (with passport-jwt, and passport-local)
 
 - nodemon (dev)
+- jsDoc (dev)
 
 ## Cloud Platform / Cloud Database Used
 - Heroku Link: [https://www.heroku.com/](https://www.heroku.com/)
