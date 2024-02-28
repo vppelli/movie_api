@@ -12,8 +12,8 @@ const express = require('express'),
     Genres = Models.Genre,
     Directors = Models.Director;
 
-// mongoose.connect('mongodb://localhost:27017/cfDB', { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/cfDB', { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const { title } = require('process');
 
@@ -71,7 +71,7 @@ app.get('/', (req, res) => {
 * @returns {Object} - The list of movies in json response, on success.
 */
 app.get('/movies', passport.authenticate('jwt', { session: false }), async (req, res) => {
-    await Movies.find()
+    await Movies.find().populate(['Genre', 'Director'])
         .then((movies) => {
             res.status(200).json(movies);
         })
@@ -92,7 +92,7 @@ app.get('/movies', passport.authenticate('jwt', { session: false }), async (req,
 * @returns {Object} - The requested movie in json response, on success.
 */
 app.get('/movies/:Title', passport.authenticate('jwt', { session: false }), async (req, res) => {
-    await Movies.findOne({ Title: req.params.Title })
+    await Movies.findOne({ Title: req.params.Title }).populate(['Genre', 'Director'])
         .then((movie) => {
             res.status(200).json(movie);
         })
@@ -190,7 +190,7 @@ app.get('/directors/:Name', passport.authenticate('jwt', { session: false }), as
 * @returns {Object} - The requested User in json response, on success.
 */
 app.get('/users/:Username', passport.authenticate('jwt', { session: false }), async (req, res) => {
-    await Users.findOne({ Username: req.params.Username })
+    await Users.findOne({ Username: req.params.Username }).populate({path: 'FavoriteMovies', populate: ['Genre', 'Director']})
         .then((user) => {
             res.json(user);
         })
