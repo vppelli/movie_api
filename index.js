@@ -50,6 +50,7 @@ require('./passport');
 
 // Setup static serve
 app.use(express.static('public'));
+app.use(express.static('out'));
 
 // READ -----------------------------------------------------------------------
 /**
