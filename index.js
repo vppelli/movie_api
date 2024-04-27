@@ -274,8 +274,8 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
         $push: { FavoriteMovies: req.params.MovieID }
     },
         { new: true }) // This line makes sure that the updated document is returned
-        .then(() => {
-            res.status(201).send('Movie added to Favorites');
+        .then((added) => {
+            res.status(201).json(added);
         })
         .catch((err) => {
             console.error(err);
@@ -382,8 +382,8 @@ app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { se
         $pull: { FavoriteMovies: req.params.MovieID }
     },
         { new: true }) // This line makes sure that the updated document is returned
-        .then(() => {
-            res.status(201).send('Movie removed from Favorites');
+        .then((removed) => {
+            res.status(201).json(removed);
         })
         .catch((err) => {
             console.error(err);
